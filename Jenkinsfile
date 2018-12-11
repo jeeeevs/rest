@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'jeeeevs/rest'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
