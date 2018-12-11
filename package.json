@@ -1,0 +1,21 @@
+{
+  "name": "rest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./src/bin/www --exec babel-node",
+    "build": "babel ./src -d build",
+    "test": "mocha test/**/* --require babel-core/register --watch"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.8"
+  }
+}
